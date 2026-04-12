@@ -63,7 +63,7 @@ export default function App() {
                                 />
                             </View>
 
-                            <ListHeading title={"All Subscription "} />
+                            <ListHeading title={"All Subscriptions "} />
                         </>
                     )}
 
@@ -76,7 +76,7 @@ export default function App() {
                         />
                     )}
                     keyExtractor={(item) => item.id}
-                    extraData={expandedSubscriptionId === HOME_SUBSCRIPTIONS[0].id}
+                    extraData={expandedSubscriptionId}
                     ItemSeparatorComponent={() => <View className={'h-4'} />}
                     showsVerticalScrollIndicator={false}
                     ListEmptyComponent={
